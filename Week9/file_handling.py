@@ -1,0 +1,32 @@
+f=open('Week9/firstFile.txt','w')
+f.write('First line')
+f.write('First line continued')
+f.write('\n')
+f.write('Second line')
+f.close()
+
+f=open('Week9/firstFile.txt','r')
+s=f.read()
+print(s)
+f.close()
+
+f=open('Week9/firstFile.txt','a')
+f.write('\n')
+f.write('Third line appended')
+f.close()
+
+f=open('Week9/firstFile.txt','r')
+s=f.read()
+print(s)
+f.close()
+
+f=open('Week9/firstFile.txt','w')
+f.write('All earlier content wiped out\n')
+f.write('9848245693\n')
+f.write('9848255693')
+f.close()
+
+f=open('Week9/firstFile.txt','r')
+s=f.read()
+print(s)
+f.close()
